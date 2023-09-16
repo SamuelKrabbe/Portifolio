@@ -1,0 +1,114 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	background-image: url(./assets/bg-desktop-light.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	color: black;
+}
+
+body.darkMode {
+	background-image: url(./assets/bg-desktop.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	color: white;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	color: inherit;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 558px;
+	margin: auto;
+	align-items: center;
+}
+
+/* profile */
+#profile {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	align-items: center;
+	color: inherit;
+	gap: 8px;
+}
+
+#profile img {
+	width: 112px;
+	height: 112px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/* switch */
+.switchMode img {
+	width: 64px;
+	height: 40px;
+}
+
+/* links */
+#links {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+	gap: 16px;
+}
+
+#links li {
+	display: flex;
+	padding: 16px 24px;
+	justify-content: center;
+	align-self: stretch;
+	cursor: pointer;
+
+	/* style */
+	border-radius: 8px;
+	border: 1px solid var(--stroke-color-light-mode, rgba(0, 0, 0, 0.5));
+	background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05));
+	backdrop-filter: blur(4px);
+}
+
+#links li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#socialLinks {
+	list-style: none;
+	display: flex;
+	padding: 24px;
+	justify-content: center;
+	gap: 16px;
+	align-self: stretch;
+}
+
+#socialLinks li a img {
+	width: 24px;
+	padding: 8px;
+}
+
+#footer {
+	color: inherit;
+	padding: 24px;
+	display: flex;
+	justify-content: center;
+	align-self: stretch;
+}
