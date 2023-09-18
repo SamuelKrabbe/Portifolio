@@ -6,7 +6,6 @@ switchMode.addEventListener("click", function () {
 	const imgSwitchMode = switchMode.querySelector("img");
 
 	document.body.classList.toggle("darkMode");
-	document.ul.li.classList.toggle("darkMode");
 
 	// Toggle the profile photo image source
 	if (document.body.classList.contains("darkMode")) {
